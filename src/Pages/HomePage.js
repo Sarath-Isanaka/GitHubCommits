@@ -16,11 +16,13 @@ function Home() {
   }, [token]);
 
   useEffect(() => {
-    if (count > 0) {
-      setTimeout(() => setCount(count - 1), 1000);
-    } else {
-      fetchGitData();
-      setCount(30)
+    if(token){
+      if (count > 0) {
+        setTimeout(() => setCount(count - 1), 1000);
+      } else {
+        fetchGitData();
+        setCount(30)
+      }
     }
   }, [count]);
 
