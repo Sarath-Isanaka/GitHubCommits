@@ -1,10 +1,30 @@
 .center {
-    position: absolute;
-    top: 40%;
-    left: 40%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
     font-family: sans-serif;
 }
 
-p{
-    font-size: 15px;
+p { 
+    font-size: 13px;
+}
+
+.container {
+    position: relative;
+    padding-left: 10px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+.gradient {
+    position: relative;
+    width: 530px;
+    z-index: -1;
+    top:-20px;
+    left : -9px;
+    height: 18px;
+    background: linear-gradient(#FFFFFF, #E8E8E8);
 }
